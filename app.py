@@ -46,5 +46,12 @@ def sitemap():
     return render_template('sitemap.xml')
 
 
+@app.route("/robots.txt")
+def robots():
+    return """
+    User-agent: *
+    Sitemap: http://www.mdejongere.nl/sitemap.xml
+    """
+
 if __name__ == "__main__":
     app.run(debug=True)

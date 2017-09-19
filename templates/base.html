@@ -10,11 +10,11 @@
       gtag('config', 'UA-47569020-3');
     </script>
   <!-- end Google Analytics -->
-  <title>M. de Jongere | {% block title %}Een boek over de Rotterdamse havenschilder Marius de Jongere.{% endblock %}</title>
+  <title>M DE JONGERE | {% block title %}Het boek over de Rotterdamse havenschilder.{% endblock %}</title>
   {% block head %}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aankondiging boek Rotterdamse havenschilder M de Jongere">
+  <meta name="description" content="{% block meta_description %}{% endblock %}">
   <meta name="keywords" content="Marius,Jongere,schilder,havenschilder,Rotterdam,haven,lithografie,aquarel,olieverf,boek,uitgave">
   <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}">
 
@@ -35,7 +35,7 @@
   <div id="menu-bar">
     <nav class="container">
       <a href="/" class="link-unstyled">
-        <img src="{{ url_for('static', filename='img/signatuur.png') }}" alt="logo" height="40px" class="m-1" id="logo">
+        <img src="{{ url_for('static', filename='img/signatuur.png') }}" alt="logo" height="40" class="m-1" id="logo">
       </a>
       <ul class="list-unstyled list-inline pull-right mr-0 mb-0 pr-0 pt-2">
         <!--
