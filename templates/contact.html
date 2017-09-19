@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section id="intro">
+  <div class="row">
+    <div class="offset-md-2 col-md-8 col-12">
+      <h3>Contactgegevens</h3>
+      <p>Neem voor vragen over het boek, of als u een bijzonder werk van Marius de Jongere wilt aanmelden,
+        contact op met Arthur Erfmann. </p>
+      <address>
+        <ul class="list-unstyled">
+          <li><i class="fa fa-fw fa-user-o mr-3" aria-hidden="true"></i>Arthur Erfman (Kunsthandel Colours)</li>
+          <li><i class="fa fa-fw fa-envelope mr-3" aria-hidden="true"></i>
+            <a href="mailto:kunsthandelcolours@gmail.com" class="">kunsthandelcolours@gmail.com</a>
+          </li>
+          <li><i class="fa fa-fw fa-map-marker mr-3" aria-hidden="true"></i>Bergselaan 291 A</li>
+          <li><i class="fa fa-fw mr-3" aria-hidden="true"></i>3038 CG Rotterdam</li>
+          <li><i class="fa fa-fw fa-phone mr-3" aria-hidden="true"></i>010-2109885</li>
+          <li><i class="fa fa-fw fa-mobile mr-3" aria-hidden="true"></i>06-37455355</li>
+        </ul>
+      </address>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+<div id="map"></div>
+{{ super() }}
+{% endblock %}}
+
+{% block bottom_script %}
+<script>
+  function initMap() {
+    var loc = {lat: 51.933252, lng: 4.464016};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: loc,
+      styles: [
+        {"featureType":"all","elementType":"geometry.fill","stylers":[{"weight":"2.00"}]},
+        {"featureType":"all","elementType":"geometry.stroke","stylers":[{"color":"#9c9c9c"}]},
+        {"featureType":"all","elementType":"labels.text","stylers":[{"visibility":"on"}]},
+        {"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},
+        {"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},
+        {"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#f7f7f7"}]},
+        {"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},
+        {"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},
+        {"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#eeeeee"}]},
+        {"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#7b7b7b"}]},
+        {"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},
+        {"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},
+        {"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},
+        {"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},
+        {"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]},
+        {"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#c8d7d4"}]},
+        {"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#070707"}]},
+        {"featureType":"water","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]}
+        ]
+    });
+    var marker = new google.maps.Marker({
+      position: loc,
+      map: map
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJxifOuztQn8l7qtOv6ylpx65xBgPdTKM&callback=initMap">
+</script>
+
+{% endblock %}

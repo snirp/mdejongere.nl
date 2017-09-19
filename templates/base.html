@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47569020-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)}
+      gtag('js', new Date());
+      gtag('config', 'UA-47569020-3');
+    </script>
+  <!-- end Google Analytics -->
+  <title>{% block title %}M. de Jongere | Een boek over de Rotterdamse havenschilder Marius de Jongere.{% endblock %}</title>
+  {% block head %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aankondiging boek Rotterdamse havenschilder M de Jongere">
+  <meta name="keywords" content="Marius,Jongere,schilder,havenschilder,Rotterdam,haven,lithografie,aquarel,olieverf,boek,uitgave">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}">
+
+  <link href="https://fonts.googleapis.com/css?family=Amaranth:700" rel="stylesheet">
+  <meta name="author" content="Roy Prins">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  {% endblock %}
+  {% block extra_head %}
+  {% endblock %}
+</head>
+
+<body id="{% block body_id %}{% endblock %}" class="{% block body_class %}{% endblock %}">
+
+<header>
+  <div id="menu-bar">
+    <nav class="container">
+      <a href="/" class="link-unstyled">
+        <img src="{{ url_for('static', filename='img/signatuur.png') }}" alt="logo" height="40px" class="m-1" id="logo">
+      </a>
+      <ul class="list-unstyled list-inline pull-right mr-0 mb-0 pr-0 pt-2">
+        <!--
+        <li class="list-inline-item mr-3">
+          <a href="#">boek</a>
+        </li>
+        -->
+        <li class="list-inline-item">
+          <a href="/contact.html">contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  {% block header %}
+  {% endblock %}
+</header>
+
+<main class="container">
+{% block main %}
+{% endblock %}
+</main>
+
+{% block footer %}
+<section id="nieuwsbrief" class="container-fluid medium-gray-bg py-3">
+  <div class="container">
+    <div class="row">
+      <div class="offset-md-2 col-md-8 col-12">
+        <h4>Nieuwsbrief</h4>
+          <p class="small">
+            Als u zich inschrijft voor de nieuwsbrief, sturen wij u een notificatie wanneer het boek
+            over Marius de Jongere zal worden uitgegeven. Tevens ontvangt u een optionele nieuwsbrief
+            met nieuwe ontwikkelingen.
+          </p>
+        <form action="//mdejongere.us16.list-manage.com/subscribe/post?u=825bea76669b751883d3dce79&amp;id=713bd02a26" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mt-4 mb-5" novalidate>
+          <div class="input-group margin-bottom-sm">
+            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="e-mail adres">
+            <input class="input-group-addon branded-inverse" id="submit" type="submit" value="nieuwsbrief">
+          </div>
+           <!-- MAILCHIMP code against bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_825bea76669b751883d3dce79_713bd02a26" tabindex="-1" value=""></div>
+          <!-- end MAILCHIMP code -->
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="container-fuid text-center">
+  <p class="small pt-4 pb-3 mb-0">
+    Copyright &copy; 2017 | Alle rechten voorbehouden.
+  </p>
+</footer>
+{% endblock %}
+
+{% block bottom_script %}
+{% endblock %}
+</body>
+</html>
