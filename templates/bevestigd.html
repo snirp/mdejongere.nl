@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Bevestiging inschrijving nieuwsbrief schilder M. de Jongere.{% endblock %}
+
+{% block main %}
+<section>
+  <div class="row">
+    <div class="offset-md-2 col-md-8 col-12">
+      <h3>Bevestigd!</h3>
+      <p>
+        Zojuist hebben wij uw bevestinging ontvangen voor de nieuwsbrief aangaande het
+        boek over Marius de Jongere, schilder van havengezichten uit Rotterdam.
+      </p>
+      <h4>Afmelden</h4>
+      <p>
+        Het is te allen tijde mogelijk zich af te melden van de nieuwsbrief. In de e-mails
+        zal een link opgenomen zijn om af te melden.
+      </p>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{# Footer without the newsletter signup - this makes no sense here #}
+{% block footer %}
+<footer class="container-fuid text-center">
+  <p class="small pt-4 pb-3 mb-0">
+    Copyright &copy; 2017 | Alle rechten voorbehouden.
+  </p>
+</footer>
+{% endblock %}

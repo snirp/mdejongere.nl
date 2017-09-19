@@ -26,6 +26,11 @@ def signed_up():
     return render_template('ingeschreven.html')
 
 
+@app.route("/bevestigd.html")
+def confirmed():
+    return render_template('bevestigd.html')
+
+
 @app.route("/uitgeschreven.html")
 def signed_off():
     return render_template('uitgeschreven.html')
