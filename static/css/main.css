@@ -11,7 +11,7 @@ body {
 }
 
 body#index header {
-  min-height: 600px;
+  min-height: 400px;
   height: 100vh;
   background: url("cover.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -89,7 +89,6 @@ h4 {
 footer {
   background-color: #444;
   color: #fff;
-  text-align: center;
   line-height: 1.4rem;
   position: absolute;
   left: 0;
