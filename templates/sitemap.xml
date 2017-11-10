@@ -3,9 +3,37 @@
 
   <url>
     <loc>http://mdejongere.nl/</loc>
-    <lastmod>2017-09-19</lastmod>
+    <lastmod>2017-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>http://mdejongere.nl/boek.html</loc>
+    <lastmod>2017-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>http://mdejongere.nl/technieken.html</loc>
+    <lastmod>2017-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>http://mdejongere.nl/werken.html</loc>
+    <lastmod>2017-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>http://mdejongere.nl/pers.html</loc>
+    <lastmod>2017-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
 
   <url>

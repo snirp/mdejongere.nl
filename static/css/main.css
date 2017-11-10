@@ -23,6 +23,7 @@ body#index header {
   flex-direction: column;
 }
 
+
 body#index #menu-bar {
   background-color: rgba(255,255,255,0.2);
   text-shadow: none;
@@ -45,6 +46,8 @@ body#index header a{
 nav {
 }
 
+
+
 address {
   font-style: normal;
 }
@@ -53,7 +56,7 @@ a {
   color: #5EA4F6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, blockquote {
   font-family: 'Amaranth', sans-serif;
 }
 
@@ -84,6 +87,16 @@ h3 {
 h4 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+blockquote {
+  color: #5EA4F6;
+  font-size: 2rem;
+  font-style: italic;
+  line-height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
 }
 
 footer {
@@ -150,4 +163,44 @@ img#signatuur {
 #menu-bar {
   background-color: whitesmoke;
   text-align: left;
+}
+
+.artikel {
+  padding-top: 0;
+}
+
+.artikel p, .artikel li {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
+.artikel h3, .artikel h4, .artikel h5, .artikel h6 {
+  color: #ccc;
+}
+
+.additional {
+  font-size: 0.85rem;
+  line-height: 1.35rem;
+  color: #555;
+}
+
+figcaption {
+  border-bottom: 1px solid lightgrey;
+  text-align: right;
+  font-size: 0.85rem;
+  line-height: 1.75rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+#boek a#boek,
+#technieken a#technieken,
+#werken a#werken,
+#pers a#pers,
+#contact a#contact {
+  color: #5EA4F6;
+}
+
+nav a {
+  color: #555;
 }
