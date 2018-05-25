@@ -16,6 +16,11 @@ def index():
     return render_template('index.html')
 
 
+@app.route("/privacy.html")
+def privacy():
+    return render_template('privacy.html')
+
+
 @app.route("/boek.html")
 def boek():
     return render_template('boek.html')
