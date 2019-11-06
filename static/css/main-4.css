@@ -248,3 +248,10 @@ figcaption {
 nav a {
   color: #555;
 }
+
+.kaft {
+  display: block;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}

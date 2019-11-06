@@ -23,7 +23,7 @@
 
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/main-3.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main-4.css') }}">
   {% endblock %}
   {% block extra_head %}
   {% endblock %}
@@ -41,12 +41,6 @@
       <ul class="list-unstyled list-inline pull-right mr-0 mb-0 pr-0 pt-2">
         <li class="list-inline-item mr-2 mr-lg-4">
           <a id="boek" href="/boek.html">boek</a>
-        </li>
-        <li class="list-inline-item mr-2 mr-lg-4">
-          <a id="technieken" href="/technieken.html">technieken</a>
-        </li>
-        <li class="list-inline-item mr-2 mr-lg-4">
-          <a id="werken" href="/werken.html">werken</a>
         </li>
         <li class="list-inline-item mr-2 mr-lg-4">
           <a id="pers" href="/pers.html">pers</a>
@@ -67,31 +61,6 @@
 </main>
 
 {% block footer %}
-<section id="nieuwsbrief" class="container-fluid medium-gray-bg py-3 text-center">
-  <div class="container">
-    <div class="row">
-      <div class="offset-md-2 col-md-8 col-12">
-        <h4>Nieuwsbrief</h4>
-        <form action="//mdejongere.us16.list-manage.com/subscribe/post?u=825bea76669b751883d3dce79&amp;id=713bd02a26"
-              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mt-4 mb-2" novalidate>
-          <div class="input-group margin-bottom-sm">
-            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="e-mail adres">
-            <input class="input-group-addon branded-inverse" id="submit" type="submit" value="nieuwsbrief">
-          </div>
-           <!-- MAILCHIMP code against bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_825bea76669b751883d3dce79_713bd02a26" tabindex="-1" value=""></div>
-          <!-- end MAILCHIMP code -->
-        </form>
-        <p class="small mb-4">
-          Als u zich inschrijft voor de nieuwsbrief, sturen wij u een notificatie wanneer het boek
-          over Marius de Jongere zal worden uitgegeven. Tevens ontvangt u een optionele nieuwsbrief
-          met nieuwe ontwikkelingen.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <footer class="container-fuid text-center">
   <div class="pt-4 mb-0">
       <a href="/privacy.html">privacyverklaring</a>
