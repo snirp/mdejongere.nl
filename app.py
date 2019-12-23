@@ -26,16 +26,6 @@ def boek():
     return render_template('boek.html')
 
 
-@app.route("/technieken.html")
-def technieken():
-    return render_template('technieken.html')
-
-
-@app.route("/werken.html")
-def werken():
-    return render_template('werken.html')
-
-
 @app.route("/pers.html")
 def pers():
     return render_template('pers.html')
