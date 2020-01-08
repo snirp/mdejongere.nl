@@ -1,102 +1,95 @@
-{% extends "base.html" %}
-
-{% block meta_description %}
-Binnenkort verschijnt het boek over de Rotterdamse havenschilder Marius de Jongere.
-Blijf op de hoogte van het nieuws en werk mee aan deze publicatie.
-{% endblock %}
-
-
-{% block body_id %}index{% endblock %}
-
-{% block header %}
+{% extends "base.html" %} {% block meta_description %} Binnenkort verschijnt het
+boek over de Rotterdamse havenschilder Marius de Jongere. Blijf op de hoogte van
+het nieuws en werk mee aan deze publicatie. {% endblock %} {% block body_id
+%}index{% endblock %} {% block header %}
 <h1>
-  Marius de Jongere<br>
+  Marius de Jongere<br />
   <small>Een Rotterdamse Kunstenaar</small>
 </h1>
-
-
 
 <a href="#intro" class="link-unstyled">
   <i class="fa fa-3x fa-chevron-down" aria-hidden="true"></i>
 </a>
 
-{% endblock %}
-
-{% block main %}
+{% endblock %} {% block main %}
 <section id="intro">
   <div class="row">
     <div class="offset-md-2 col-md-8 col-12">
-      <h3>Het boek over Marius de Jongere</h3>
+      <div style="text-align: center; margin: 30px 0">
+        <p>De uitgave van dit boek is mogelijk gemaakt door</p>
+        <h2>ELECTROCIRKEL MARINE en INDUSTRIE</h2>
+        <p>
+          <small
+            >Rudolf van Soelen, kunstliefhebber en fan van Marius de
+            Jongere</small
+          >
+        </p>
+      </div>
+
       <p>
-        Kunsthandelaar Arthur Erfmann heeft de zoon en dochter van de schilder in september 2017
-        bereid gevonden mee te werken aan het boek over het werk van hun vader. Kunstschilder
-        M. de Jongere verwierf in het midden van de vorige eeuw vooral bekendheid als
-        Rotterdamse havenschilder. Naast havengezichten schilderde hij ook regelmatig landschappen.
-        Af en toe kreeg hij een opdracht voor een totaal ander onderwerp, zoals: portret, bloemstuk,
-        gebouw, genrestuk of vliegtuig. In het boek zullen <a href="/boek.html">enkele belangrijke vragen</a>
-        over de persoon en het oeuvre worden beantwoord.
+        In het midden van de vorige eeuw verwierf M. de Jongere, pseudoniem van
+        Marius Drulman (1912-1977) grote bekendheid als de beste havenschilder
+        van de Maasstad. In zijn lange carrière bracht hij de ontwikkelingen van
+        de Rotterdamse haven in beeld. Naast havengezichten, schilderde hij ook
+        regelmatig landschappen. Af en toe ontving Marius een opdracht voor een
+        totaal ander onderwerp, zoals: portret, bloemstuk, gebouw of
+        genrestukje. Behalve olieverf schilderijen, maakte hij vele etsen,
+        aquarellen en litho’s. Deze monografie toont de artistieke
+        veelzijdigheid van de kunstenaar.
       </p>
+
       <p>
-        Behalve olieverf schilderijen, maakte M. de Jongere ook vele etsen, litho's en aquarellen.
-        In het boek zal aan de hand van die vier technieken een overzicht
-        gegeven worden van de ontwikkeling van zijn werk. Het boek is vanaf heden verkrijgbaar in de boekhandel.
+        De samenstellers van het boek:
       </p>
+      <ul>
+        <li><b>Maarten Drulman</b>: fotografie en beeldbewerking</li>
+        <li><b>Carola Prins</b>: tekst</li>
+        <li>
+          <b>Rudolf van Soelen</b>: etsen, aquarellen en olieverf schilderijen van de
+          kunstenaar
+        </li>
+        <li>
+          <b>Arthur Erfmann</b>: onderzoek naar minder bekende werken van de kunstenaar
+        </li>
+        <li><b>Ron van Driel</b>: beeldadvies en beeldarchief</li>
+        <li><b>Klaas Bolt</b>, Rocka art/sign/druk: vormgeving</li>
+        <li><b>Martijn van Dansik</b>, uitgeverij Scriptum Schiedam: advies</li>
+      </ul>
     </div>
   </div>
 </section>
 
 <figure>
-  <img 
-    src="{{ url_for('static', filename='img/kaft_voor.jpg') }}" 
-    alt="Kaft voorzijde - Marius de Jongere" 
+  <img
+    src="{{ url_for('static', filename='img/kaft_voor.jpg') }}"
+    alt="Kaft voorzijde - Marius de Jongere"
     class="kaft"
-  >
+  />
   <figcaption>Voorzijde boek</figcaption>
 </figure>
 
 <figure>
-  <img 
-    src="{{ url_for('static', filename='img/kaft_achter.jpg') }}" 
-    alt="Kaft achterzijde - Marius de Jongere" 
+  <img
+    src="{{ url_for('static', filename='img/kaft_achter.jpg') }}"
+    alt="Kaft achterzijde - Marius de Jongere"
     class="kaft"
-  >
+  />
   <figcaption>Achterzijde boek</figcaption>
 </figure>
 
-<section id="updates">
-    <div class="row">
-      <div class="offset-md-2 col-md-8 col-12">
-        <h3>Updates</h3>
-        <ul>
-          <li>
-            <a href="/pers.html#bericht-publicatie">
-              persbericht 4 september 2019 - Medio december 2019 in de boekhandel
-            </a>
-          </li>
-          <li>
-            <a href="/pers.html#bericht-uitgever">
-              persbericht 26 mei 2019 - Publicatie bij uitgeverij Scriptum
-            </a>
-          </li>
-        </ul>
-        <p>
-            <a href="/pers.html">Alle updates</a>
-        </p>
-      </div>
-    </div>
-  </section>
-{% endblock %}
-
-
-
-{% block bottom_script %}
+{% endblock %} {% block bottom_script %}
 <script>
-// Fix faulty viewheight implementation in mobile webkit browsers
-function calcVH() {
-  var vH = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-  document.getElementsByTagName("header")[0].setAttribute("style", "height:" + vH + "px;");
-}
-calcVH();
-window.addEventListener('onorientationchange', calcVH, true);
+  // Fix faulty viewheight implementation in mobile webkit browsers
+  function calcVH() {
+    var vH = Math.max(
+      document.documentElement.clientHeight,
+      window.innerHeight || 0
+    );
+    document
+      .getElementsByTagName("header")[0]
+      .setAttribute("style", "height:" + vH + "px;");
+  }
+  calcVH();
+  window.addEventListener("onorientationchange", calcVH, true);
 </script>
 {% endblock %}
