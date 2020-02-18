@@ -21,11 +21,6 @@ def privacy():
     return render_template('privacy.html')
 
 
-@app.route("/boek.html")
-def boek():
-    return render_template('boek.html')
-
-
 @app.route("/pers.html")
 def pers():
     return render_template('pers.html')
